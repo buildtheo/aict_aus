@@ -6,7 +6,7 @@ description: >-
 
 # Lab 0 - Setup
 
-Duration: 3 minutes
+Duration: 5 minutes
 
 
 
@@ -36,4 +36,14 @@ Duration: 3 minutes
     <figure><img src=".gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
 
-7. You have completed the setup and the compliance charts will now show correctly.
+7.  Next, run the lab fix script. It prepares the instance so the dashboards, Access map, Value tab and Lab 4 remediation tasks work for the lab personas. First, elevate your role: click your **profile avatar** in the top-right corner, then click **Elevate role**. In the _Elevate role_ dialog, check **security\_admin** and click **Update**.<br>
+
+    <figure><img src=".gitbook/assets/image (214).png" alt="Elevate role dialog with security_admin checked"><figcaption></figcaption></figure>
+
+
+8.  Open the [lab fix script](https://github.com/buildtheo/aict_aus/blob/main/scripts/AICT_LAB_FIX.js), click the **Copy raw file** button, and keep it on your clipboard.
+9.  Click **All**, type **Scripts - Background** in the filter, and open it. Paste the script into the _Run script_ box, make sure **in scope** is set to **global**, and click **Run script** **once**. Wait a few seconds for the output; do not click it again.
+10. Check the last line of the output:
+    * **RESULT: FIXED** or **RESULT: NOTHING TO FIX** - you are ready to continue.
+    * **RESULT: NOT RUN** or **RESULT: STOPPED** - do not continue. Share the output with your instructor.
+11. You have completed the setup and the compliance charts will now show correctly.
